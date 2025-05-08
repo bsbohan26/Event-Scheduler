@@ -1,0 +1,41 @@
+.add-event-btn {
+    background: linear-gradient(45deg, #ffa07a, #ffd700);
+    border: none;
+}
+
+.add-event-btn:hover {
+    background: linear-gradient(45deg, #ff8c69, #ffd700);
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+.event-card {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-status {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8em;
+}
+
+.status-scheduled {
+    background-color: #e3f2fd;
+    color: #1976d2;
+}
+
+.status-completed {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.status-cancelled {
+    background-color: #ffebee;
+    color: #c62828;
+} 

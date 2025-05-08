@@ -1,0 +1,12 @@
+.add-member-btn {
+    background: linear-gradient(45deg, #ffa07a, #ffd700);
+    border: none;
+}
+
+.add-member-btn:hover {
+    background: linear-gradient(45deg, #ff8c69, #ffd700);
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+/* Add any additional styles for the team page here */ 
