@@ -1,15 +1,7 @@
 from flask import Flask, render_template, redirect, url_for
 from werkzeug.urls import url_quote  # If you need url_quote specifically
-from opentelemetry.instrumentation.flask import FlaskInstrumentor
-from opentelemetry.sdk.trace import TracerProvider
-from opentelemetry.exporter.otlp.proto.http.trace_exporter import OTLPSpanExporter
-from opentelemetry.sdk.trace.export import BatchSpanProcessor
-from opentelemetry.sdk.resources import SERVICE_NAME, Resource
 
 app = Flask(__name__)
-FlaskInstrumentor().instrument_app(app)
-
-provider = TracerProvider(resource=Resource.create({SERVICE_NAME: "flask-app"}))
 
 @app.route("/")
 def hello():
